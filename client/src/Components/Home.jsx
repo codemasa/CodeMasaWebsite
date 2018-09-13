@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import ContentBox from './TextBoxes/ContentBox'
+import NameBox from './TextBoxes/NameBox';
+
 class Home extends Component {
   render() {
     var contents = {
-      pageTitle: "Title",
       section: "Content"
     }
     return (
       <div>
         <ContentBox pageTitle={contents.pageTitle} section={contents.section}>
-          <h1>{5 == 3 ? "Yes" : "No"}</h1>
+          <NameBox/>
         </ContentBox>
       </div>
     )

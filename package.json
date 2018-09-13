@@ -32,13 +32,11 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/codemasa/CodeMasaWebsite"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
-    ]
-  },
-
+  ]
 }

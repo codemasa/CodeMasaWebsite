@@ -23,22 +23,35 @@ footer {
   color: white;
 }
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32ff32+0,fffb89+100 */
-body{
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04ff00+0,90ff00+100 */
-  background: #04ff00; /* Old browsers */
-  background: -moz-linear-gradient(left, #04ff00 0%, #90ff00 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #04ff00 0%,#90ff00 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #04ff00 0%,#90ff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04ff00', endColorstr='#90ff00',GradientType=1 ); /* IE6-9 */
-}
-
 .content-box {
-  background-color: gray;
   margin: auto;
   width: 85%;
   height: -webkit-fill-available;
   padding: 10px;
-  opacity: 0.5;
-  border-radius: 10px:
+  border-radius: 10px;
+}
+
+.name-box{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 85%;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: 'Quicksand';
+  font-size: 800%;
+
+}
+
+
+@font-face{
+    font-family:'Quicksand';
+    src: url('./fonts/Quicksand-Regular.otf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Quicksand';
+    src: url('./fonts/Quicksand-bold.otf');
+    font-weight: 600;
+    font-style: bold;
 }
