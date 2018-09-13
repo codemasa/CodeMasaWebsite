@@ -1,0 +1,44 @@
+header {
+  display: block;
+  background-color: gray;
+  width: 100%;
+  height: 50px;
+  color: white;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+#headerButtons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navButton {
+  float: right;
+}
+footer {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#32ff32+0,fffb89+100 */
+body{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#04ff00+0,90ff00+100 */
+  background: #04ff00; /* Old browsers */
+  background: -moz-linear-gradient(left, #04ff00 0%, #90ff00 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #04ff00 0%,#90ff00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #04ff00 0%,#90ff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#04ff00', endColorstr='#90ff00',GradientType=1 ); /* IE6-9 */
+}
+
+.content-box {
+  background-color: gray;
+  margin: auto;
+  width: 85%;
+  height: -webkit-fill-available;
+  padding: 10px;
+  opacity: 0.5;
+  border-radius: 10px:
+}
