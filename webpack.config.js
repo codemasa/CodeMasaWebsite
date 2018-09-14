@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css', '.txt']
+    extensions: ['.js', '.jsx', '.json', '.css', '.txt', '.ico']
   },
   mode: 'production',
   module : {
@@ -23,7 +23,7 @@ module.exports = {
         loader: 'url-loader?limit=100000&minetype=image/png'
       },
       {
-        test: /\.jpg/,
+        test: /\.(jpg|ico)/,
         loader: 'file-loader'
       },
       {
