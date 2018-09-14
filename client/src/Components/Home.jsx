@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import ContentBox from './TextBoxes/ContentBox'
 import NameBox from './TextBoxes/NameBox';
 import ContentSection from './TextBoxes/ContentSection';
-import Languages from './textboxes/Languages';
-import Projects from './textboxes/Projects';
+import Languages from './Textboxes/Languages';
+import Projects from './Textboxes/Projects';
 import aboutMe from '../../dist/texts/aboutme.txt';
 import languages from '../../dist/texts/languages.json'
 import projects from '../../dist/texts/projects.json'
