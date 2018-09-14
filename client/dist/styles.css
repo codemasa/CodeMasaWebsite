@@ -7,14 +7,7 @@ header {
   opacity: 0.5;
   border-radius: 10px;
 }
-#headerButtons {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.navButton {
-  float: right;
-}
+
 footer {
   display: block;
   width: 100%;
@@ -29,6 +22,8 @@ footer {
   height: -webkit-fill-available;
   padding: 10px;
   border-radius: 10px;
+  font-family: 'Quicksand';
+
 }
 
 .name-box{
@@ -38,8 +33,57 @@ footer {
   padding: 10px;
   border-radius: 10px;
   font-family: 'Quicksand';
-  font-size: 800%;
 
+}
+
+.content{
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-bottom: 10%;
+  width: 85%;
+  padding: 10px;
+  font-family: 'Quicksand';
+}
+
+.content-col{
+  margin-left: 10%;
+  width: 85%;
+  border-radius: 10px;
+  font-family: 'Quicksand';
+}
+
+
+.title{
+  margin-top: 15px;
+  width: 90px;
+  float: left;
+}
+.text{
+  margin-left: 10%;
+  width: 450px;
+}
+.text-col{
+  margin-left: 6.5%;
+  width: 450px;
+  column-count: 2;
+}
+
+#title-1 {
+  font-size: 60px;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-family: 'Quicksand';
+
+}
+#title-2 {
+  font-size: 60px;
+  margin-left: 300px;
+  font-family: 'Quicksand';
+
+}
+#first-last-name {
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 

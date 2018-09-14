@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css']
+    extensions: ['.js', '.jsx', '.json', '.css', '.txt']
   },
   module : {
     rules : [
@@ -31,7 +31,11 @@ module.exports = {
         loader : 'babel-loader',
         query: {
           presets: ['react', 'env']
-       }
+        }
+      },
+      {
+        test: /\.txt$/,
+        use: 'raw-loader'
       }
     ]
   },
