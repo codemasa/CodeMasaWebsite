@@ -1,0 +1,17 @@
+{
+  "KrabBorg": {
+    "Name": "KrabBorg",
+    "Link": "https://github.com/codemasa/KrabBorg",
+    "TechStack": {
+      "FrontEnd": "Discord App",
+      "BackEnd": "Javascript",
+      "Database": "JSON file"
+    },
+    "Description": [
+      "Chat Bot for Discord",
+      "Coded in Javascript",
+      "Created using Discord API",
+      "Implemented MongoDB for chat logging"
+    ]
+  }
+}
