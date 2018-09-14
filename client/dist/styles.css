@@ -41,14 +41,12 @@ footer {
   margin-left: 15%;
   margin-bottom: 10%;
   width: 85%;
-  padding: 10px;
   font-family: 'Quicksand';
 }
 
 .content-col{
-  margin-left: 10%;
+  margin-left: 15%;
   width: 85%;
-  border-radius: 10px;
   font-family: 'Quicksand';
 }
 
@@ -60,10 +58,11 @@ footer {
 }
 .text{
   margin-left: 10%;
+  padding-left: 30px;
   width: 450px;
 }
 .text-col{
-  margin-left: 6.5%;
+  margin-left: 10%;
   width: 450px;
   column-count: 2;
 }
