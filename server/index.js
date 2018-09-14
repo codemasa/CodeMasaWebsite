@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 8080;
 const path = require('path');
 const app = express();
+require("http-server").createServer().listen(process.env.PORT);
 app.use(favicon(__dirname + `../favicon.ico`));
 app.use(bodyParser.json());
 app.use(express.static(`${__dirname}/../client/dist`));
