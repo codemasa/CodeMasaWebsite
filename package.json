@@ -2,6 +2,9 @@
   "name": "codyabewebsite",
   "version": "1.0.0",
   "description": "This is my website",
+  "engines": {
+  "node": "10.10.0"
+  },
   "main": "index.jsx",
   "scripts": {
     "dev": "webpack -d --watch",
