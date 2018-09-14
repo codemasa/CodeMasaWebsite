@@ -3,8 +3,10 @@ import ContentBox from './TextBoxes/ContentBox'
 import NameBox from './TextBoxes/NameBox';
 import ContentSection from './TextBoxes/ContentSection';
 import Languages from './textboxes/Languages';
+import Projects from './textboxes/Projects';
 import aboutMe from '../../dist/texts/aboutme.txt';
 import languages from '../../dist/texts/languages.json'
+import projects from '../../dist/texts/projects.json'
 import { Segment, Button, Divider } from 'semantic-ui-react'
 
 class Home extends Component {
@@ -12,7 +14,8 @@ class Home extends Component {
   render() {
     var contents = {
       aboutMeText: aboutMe,
-      languages: languages
+      languages: languages,
+      projects: projects
     }
     return (
       <div>
@@ -20,7 +23,7 @@ class Home extends Component {
           <NameBox/>
           <ContentSection title='About Me' text={contents.aboutMeText}/>
           <Divider section/>
-          <ContentSection title='Projects'/>
+          <Projects title='Projects' project={contents.projects.KrabBorg}/>
           <Divider section/>
 
 

@@ -49,6 +49,11 @@ footer {
   width: 85%;
   font-family: 'Quicksand';
 }
+.projects{
+  margin-left: 15%;
+  width: 85%;
+  font-family: 'Quicksand';
+}
 
 
 .title{
@@ -65,6 +70,14 @@ footer {
   margin-left: 10%;
   width: 450px;
   column-count: 2;
+}
+.project{
+  margin-left: 15%;
+  width: 450px;
+}
+.project-title{
+  margin-left: 18px;
+  font-size: 30px;
 }
 
 #title-1 {
