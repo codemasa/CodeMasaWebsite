@@ -15,6 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "webpack",
     "heroku-postbuild": "webpack -p"
+    
   },
   "author": "Cody Abe",
   "license": "ISC",
