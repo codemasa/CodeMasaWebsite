@@ -80,15 +80,20 @@ footer {
   font-size: 30px;
 }
 
-.title-1 {
+#title-1 {
   font-size: 60px;
   margin-top: 50px;
   margin-left: 100px;
   font-family: 'Quicksand';
 
 }
+#title-2 {
+  font-size: 60px;
+  margin-left: 300px;
+  font-family: 'Quicksand';
 
-.first-last-name {
+}
+#first-last-name {
   margin-left: 50px;
   margin-bottom: 50px;
 }

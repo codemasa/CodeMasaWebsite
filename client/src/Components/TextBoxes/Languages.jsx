@@ -15,7 +15,7 @@ class Languages extends Component {
                                                       <List.Content>
                                                         <List.Header as='a'>{langs}</List.Header>
                                                         <List.Description>
-                                                          {this.props.year[i]} + Years of experience
+                                                          0+ Years of experience
                                                         </List.Description>
                                                       </List.Content>
                                                     </List.Item>)}
