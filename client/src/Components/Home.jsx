@@ -24,6 +24,7 @@ class Home extends Component {
           <ContentSection title='About Me' text={contents.aboutMeText}/>
           <Divider section/>
           <Projects title='Projects' project={contents.projects.KrabBorg}/>
+          <Projects title='Projects' project={contents.projects.TakeANote}/>
           <Divider section/>
 
 
