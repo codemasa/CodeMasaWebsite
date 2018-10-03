@@ -13,5 +13,20 @@
       "Created using Discord API",
       "Implemented MongoDB for chat logging"
     ]
+  },
+  "TakeANote": {
+    "Name": "Take a Note",
+    "Link": "https://github.com/codemasa/TakeANote",
+    "TechStack": {
+      "FrontEnd": "Kotlin/XML/AndroidOS",
+      "BackEnd": "Kotlin",
+      "Database": "SQLite"
+    },
+    "Description": [
+      "Created a note taking app inspired by train-of-thought note taking",
+      "Coded in Kotlin and XML",
+      "Used the Android SDK",
+      "Implemented a SQLite Database for storage"
+    ]
   }
 }
