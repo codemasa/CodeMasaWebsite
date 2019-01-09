@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {List, Image, Divider} from 'semantic-ui-react';
-
 class Projects extends Component {
 
   render() {

@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json', '.css', '.txt', '.ico']
+    extensions: ['.js', '.jsx', '.json', '.css', '.txt', '.ico', 'html']
   },
   mode: 'production',
   module : {
@@ -34,6 +34,7 @@ module.exports = {
           presets: ['react', 'env']
         }
       },
+
       {
         test: /\.txt$/,
         use: 'raw-loader'
@@ -42,7 +43,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('development')
     })
   ]
 };

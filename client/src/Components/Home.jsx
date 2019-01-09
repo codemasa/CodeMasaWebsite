@@ -8,6 +8,7 @@ import aboutMe from '../../dist/texts/aboutme.txt';
 import languages from '../../dist/texts/languages.json'
 import projects from '../../dist/texts/projects.json'
 import { Segment, Button, Divider } from 'semantic-ui-react'
+import SevenSegmentCounter from 'seven-segment-counter'
 
 class Home extends Component {
 
@@ -25,6 +26,9 @@ class Home extends Component {
           <Divider section/>
           <Projects title='Projects' project={contents.projects.KrabBorg}/>
           <Projects title='Projects' project={contents.projects.TakeANote}/>
+          <div className='counter'>
+            <SevenSegmentCounter />
+          </div>
           <Divider section/>
 
 
