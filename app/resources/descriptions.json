@@ -1,0 +1,3 @@
+{
+  "ssc": "This project was inspired by the Seven Segment Display on this YouTube video https://youtu.be/MlRlgbrAVOs by the \"The Coding Train\" and I extended it to be a counter. I also added the feature of being able to set it to a certain value programmatically as well as the ablilty to change its color scheme."
+}

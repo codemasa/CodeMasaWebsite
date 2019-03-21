@@ -1,15 +1,15 @@
-const express = require('express');
-const favicon = require('express-favicon');
-const bodyParser = require('body-parser');
-const PORT = process.env.PORT || 8080;
-const path = require('path');
-const app = express();
-app.use(bodyParser.json());
-app.use(express.static(`${__dirname}/../client/dist`));
-app.use(favicon(__dirname + `/favicon.ico`));
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(`${__dirname}/../client/dist/index.html`));
-});
-app.listen(PORT, () => {
-  console.log(`listening on port ${PORT}!`);
+import path from 'path'
+import express from 'express'
+import log from 'llog'
+import ssr from './lib/ssr'
+const app = express()
+// Expose the public directory as /dist and point to the browser version
+app.use('/dist/client', express.static(path.resolve(process.cwd(), 'dist', 'client')));
+// Anything unresolved is serving the application and let
+// react-router do the routing!
+app.get('/*', ssr)
+// Check for PORT environment variable, otherwise fallback on Parcel default port
+const port = process.env.PORT || 1234;
+app.listen(port, () => {
+  log.info(`Listening on port ${port}...`);
 });
