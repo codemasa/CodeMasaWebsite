@@ -2,9 +2,14 @@ import path from 'path'
 import express from 'express'
 import log from 'llog'
 import ssr from './lib/ssr'
+const favicon = require('express-favicon');
+
 const app = express()
+
 // Expose the public directory as /dist and point to the browser version
 app.use('/dist/client', express.static(path.resolve(process.cwd(), 'dist', 'client')));
+app.use(favicon(`./favicon.ico`));
+
 // Anything unresolved is serving the application and let
 // react-router do the routing!
 app.get('/*', ssr)
