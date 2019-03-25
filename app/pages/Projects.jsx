@@ -5,6 +5,7 @@ import Contents from '../components/Contents.jsx';
 import SSCProject from '../components/SSCProject.jsx';
 import LissajousProject from '../components/Lissajous.jsx';
 import TakeANoteProject from '../components/TakeANote.jsx';
+import FoodOrder from '../components/FoodOrder.jsx';
 
 
 
@@ -14,6 +15,7 @@ const Projects = () => (
       <title>About Page</title>
     </Helmet>
     <Contents>
+      <FoodOrder/>
       <TakeANoteProject/>
       <SSCProject/>
       <LissajousProject/>
