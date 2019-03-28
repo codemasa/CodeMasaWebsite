@@ -99,7 +99,7 @@ class Resume extends React.Component{
         <p>B.S., Computer and Information Science; Business Administration Minor</p>
       </ResumeHeaderLeft>
       <ResumeHeaderRight>
-        <p>Septenmber 2014 - July 2018</p>
+        <p>September 2014 - July 2018</p>
       </ResumeHeaderRight>
       <Clear/>
       <ResumeHeaderLeft>

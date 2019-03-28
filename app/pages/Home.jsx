@@ -10,9 +10,7 @@ const Home = () => (
       <title>Home Page</title>
     </Helmet>
     <Contents>
-      <h1>
-        <Resume/>
-      </h1>
+      <Resume/>
     </Contents>
 
   </Page>
