@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 const Contents = styled.div`
-  padding-top: 5%;
+  padding-top: 60px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 60vw;
+  width: 90%;
   height: 100%;
   min-height: 100vh;
   display: inline-block;

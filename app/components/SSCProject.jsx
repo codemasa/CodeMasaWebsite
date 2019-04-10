@@ -14,7 +14,7 @@ const SSCProjectDiv= styled.div
 const SSCProjectHeader = styled.h1
 `
   text-align: left;
-  font-size: 40px;
+  font-size: 4vw;
   padding-left: 20px;
 `
 
@@ -23,6 +23,8 @@ const SSCProjectBody = styled.div
   text-align: left;
   padding-left: 20px;
   padding-bottom: 20px;
+  font-size: 2vw;
+
 `
 const SSCDiv = styled.div
 `
@@ -48,7 +50,7 @@ class SSCProject extends React.Component{
 
       </SSCProjectBody>
       <SSCDiv>
-        <SevenSegmentCounter buttonClass="buttonClass" buttonTag={buttonTags} width={600} onColor={"#000000"} offColor={"#BBEEBB"} backgroundColor={"#AAFFAA"}/>
+        <SevenSegmentCounter buttonClass="buttonClass" buttonTag={buttonTags} width={200} onColor={"#000000"} offColor={"#BBEEBB"} backgroundColor={"#AAFFAA"}/>
       </SSCDiv>
     </SSCProjectDiv>
     )

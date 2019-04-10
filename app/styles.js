@@ -5,7 +5,6 @@ html {
   font-size: 10px;
 }
 body {
-  font-size: 1.6rem;
 }
 /* Relative Type Scale */
 /* https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 */
@@ -86,7 +85,6 @@ button{
   background-color: #CCBBAA;
   border: none;
   color: white;
-  padding: 28.601px 15px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;

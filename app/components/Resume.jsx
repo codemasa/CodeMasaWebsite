@@ -12,7 +12,7 @@ const ResumeHeaderLeft = styled.div
 `
   float: left;
   text-align: left;
-  font-size: 20px;
+  font-size: 2vw;
   padding-left: 20px;
 `
 
@@ -20,7 +20,7 @@ const ResumeHeaderRight = styled.div
 `
   float: right;
   text-align: right;
-  font-size: 20px;
+  font-size: 2vw;
   padding-right: 20px;
 `
 const Clear = styled.div
@@ -72,7 +72,7 @@ class Resume extends React.Component{
       <ResumeHeaderLeft>
         <h2>University of Oregon NSF Research Grant</h2>
         <h2>Coding and Scripting Specialist</h2>
-        <p>• Assisted in a study by creating scripts to facilitate the rate of information gathering</p>
+        <p>• Assisted in a study by creating scripts to</p><p>facilitate the rate of information gathering</p>
         <p>• Improved rate of data collection by 100%</p>
         <p>• Improved existing scripts from O(n2) to O(n) time</p>
         <p>• Collaborated cohesively with other employees of grant</p>

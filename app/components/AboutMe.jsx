@@ -12,7 +12,7 @@ const AboutMeLeft = styled.div
 `
   float: left;
   text-align: left;
-  font-size: 20px;
+  font-size: 2vw;
   padding-left: 20px;
 `
 
@@ -20,7 +20,7 @@ const AboutMeRight = styled.div
 `
   float: right;
   text-align: right;
-  font-size: 20px;
+  font-size: 2vw;
   padding-right: 20px;
 `
 const Clear = styled.div

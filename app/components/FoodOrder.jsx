@@ -11,7 +11,7 @@ const FoodOrderProjectDiv= styled.div
 const FoodOrderHeader = styled.h1
 `
   text-align: left;
-  font-size: 40px;
+  font-size: 4vw;
   padding-left: 20px;
 `
 
@@ -20,6 +20,8 @@ const FoodOrderBody = styled.div
   text-align: left;
   padding-left: 20px;
   padding-bottom: 20px;
+  font-size: 2vw;
+
 `
 const FoodOrderDiv = styled.div
 `
