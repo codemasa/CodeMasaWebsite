@@ -93,7 +93,7 @@ button:focus{
   outline: none;
 }
 button:active{
-  background-color: #BBCCAA;
+  background-color: #FFFFFF;
 }
 canvas{
   display: inline-block;

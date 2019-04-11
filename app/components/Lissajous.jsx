@@ -48,7 +48,7 @@ class LissajousProject extends React.Component{
         <p>Find out more on <a target="_blank" href="https://github.com/codemasa/LissajousCurves">GitHub</a></p>
       </LissajousProjectBody>
       <LissajousDiv>
-        <img width={500} src={liss}/>
+        <img width={"50%"} src={liss}/>
       </LissajousDiv>
     </LissajousProjectDiv>
     )
