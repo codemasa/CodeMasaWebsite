@@ -93,7 +93,7 @@ button:focus{
   outline: none;
 }
 button:active{
-  background-color: #FFFFFF;
+  background-color: #BBCCAA;
 }
 canvas{
   display: inline-block;
@@ -102,5 +102,8 @@ canvas{
 .buttonClass{
   display: inline-grid;
   position: absolute;
+}
+.small-menu{
+  margin-right: 40px
 }
 `

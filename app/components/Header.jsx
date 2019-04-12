@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom';
 
 import ResponsiveMenu from 'react-responsive-navbar';
+import { MdMenu, MdClear } from "react-icons/md";
+
 
 const Header = styled.header`
   z-index: 100;
@@ -11,7 +13,7 @@ const Header = styled.header`
   left: 0;
   right: 0;
   max-width: 100vw;
-  height: 30px;
+  min-height: 30px;
   margin: 0 auto;
   padding: 1em 0;
   display: flex;
@@ -39,11 +41,10 @@ export default () => (
   <Header>
     <Brand>Cody Masao</Brand>
     <ResponsiveMenu
-      menuOpenButton={<Menu />}
-      menuCloseButton={<Menu />}
+      menuOpenButton={<MdMenu/>}
+      menuCloseButton={<MdClear/>}
       changeMenuOn="500px"
-      largeMenuClassName="large-menu-classname"
-      smallMenuClassName="small-menu-classname"
+      smallMenuClassName="small-menu"
       menu={
         <Menu>
           <MenuLink>
