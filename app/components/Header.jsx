@@ -8,7 +8,7 @@ import { MdMenu, MdClear } from "react-icons/md";
 
 const Header = styled.header`
   z-index: 100;
-  position: absolute;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;

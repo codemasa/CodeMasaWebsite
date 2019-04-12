@@ -104,6 +104,7 @@ canvas{
   position: absolute;
 }
 .small-menu{
-  margin-right: 40px
+  margin-right: 40px;
+  font-size: 20px;
 }
 `
