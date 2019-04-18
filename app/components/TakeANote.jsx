@@ -42,7 +42,7 @@ class TakeANoteProject extends React.Component{
       <TakeANoteProjectBody>
         <p>This project was to test my chops at mobile development for Android. I decided that a note-taking app for movies with a similar UI to texting was the way to do it. I love movies, and I love talking about movies, but when it comes to remembering every single detail, it is hard to do that without taking notes. In an era of live tweeting, I felt like this method of taking notes would be similar enough so that the train of thought can keep flowing.</p>
         <br/>
-        <p>Find out more on <a target="_blank" href="https://github.com/codemasa/TakeANote">GitHub</a></p>
+        <p>Find out more on <a target="_blank" href="https://github.com/codemasa/TakeANote">GitHub</a> or <a target="_blank" href="https://play.google.com/store/apps/details?id=com.codemasa.codyabe.takeanote">Beta Test on Android!</a></p>
       </TakeANoteProjectBody>
       <TakeANoteDiv>
       </TakeANoteDiv>

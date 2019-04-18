@@ -7,6 +7,7 @@ import { MdMenu, MdClear } from "react-icons/md";
 
 
 const Header = styled.header`
+  color: #feda6a
   z-index: 100;
   position: sticky;
   top: 0;
@@ -19,7 +20,7 @@ const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #EEAAAA;
+  background: linear-gradient(90deg, rgba(57,63,77,1) 0%, rgba(29,30,34,1) 7%);
 `
 const Brand = styled.h1`
   padding-left: 10vw;

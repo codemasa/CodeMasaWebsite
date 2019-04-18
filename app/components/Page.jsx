@@ -7,6 +7,6 @@ const Page = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #BBBBBB;
+  background-color: #393f4d;
 `
 export default Page

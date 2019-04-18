@@ -50,7 +50,6 @@ class AboutMe extends React.Component{
       <AboutMeLeft>
         <p>I like music and I play multiple instruments. I am not bragging or anything. Its just the piano, guitar, bass, ukulele, and I sing.</p><br/>
         <p>I love movies and like to pretend I am a screenwriter from time to time. I want to direct a short film one day, but maybe not. </p><br/>
-        <p>My love for comedy leads me to daydream of being a stand-up comic, and that of my interests is sadly the one that is the most attainable. </p>
         <br/>
         <br/>
         <p>Do NOT contact me with unsolicited services or offers.</p>

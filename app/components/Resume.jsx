@@ -74,7 +74,6 @@ class Resume extends React.Component{
         <h2>Coding and Scripting Specialist</h2>
         <p>• Assisted in a study by creating scripts to</p><p>facilitate the rate of information gathering</p>
         <p>• Improved rate of data collection by 100%</p>
-        <p>• Improved existing scripts from O(n2) to O(n) time</p>
         <p>• Collaborated cohesively with other employees of grant</p>
         <p>• Contributed in solving various efficiency-based problems</p>
       </ResumeHeaderLeft>

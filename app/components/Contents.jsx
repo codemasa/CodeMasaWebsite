@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 const Contents = styled.div`
+  color: #d4d4dc;
   padding-top: 1em;
   padding-left: 10px;
   padding-right: 10px;
