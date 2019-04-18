@@ -8,5 +8,6 @@ const Page = styled.div`
   align-items: center;
   text-align: center;
   background-color: #393f4d;
+  padding-bottom: 2em;
 `
 export default Page
