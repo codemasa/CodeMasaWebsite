@@ -12,28 +12,18 @@ const Footer = styled.footer`
   color: #feda6a
   z-index: 100;
   position: flex;
-  bottom: 0;
-  left: 0;
-  right: 0;
   max-width: 100vw;
   min-height: 30px;
-  margin: 0 auto;
-  padding: 1em 0;
+  padding: 1em 5em;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background: linear-gradient(90deg, rgba(57,63,77,1) 0%, rgba(29,30,34,1) 7%);
 `
-const Brand = styled.h1`
-  padding-left: 10vw;
-  font-size: var(--step-up-1);
-`
 const Menu = styled.ul`
-  padding-right: 10vw;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 50vw;
+  font-size: 15px;
+  float: right;
 `
 const MenuLink = styled.li`
   margin-left: 2em;
@@ -42,7 +32,6 @@ const MenuLink = styled.li`
 export default () => (
 
   <Footer>
-    <Brand>Cody Masao</Brand>
     <Menu>
       Socials:
       <MenuLink>

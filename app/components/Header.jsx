@@ -24,6 +24,7 @@ const Header = styled.header`
 `
 const Brand = styled.h1`
   padding-left: 10vw;
+
 `
 const Menu = styled.ul`
   padding-right: 10vw;
