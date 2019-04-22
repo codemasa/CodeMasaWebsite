@@ -12,16 +12,16 @@ const ResumeHeaderLeft = styled.div
 `
   float: left;
   text-align: left;
-  font-size: 2vw;
-  padding-left: 20px;
+  font-size: 1.5vw;
+  padding-left: 10vw
 `
 
 const ResumeHeaderRight = styled.div
 `
   float: right;
   text-align: right;
-  font-size: 2vw;
-  padding-right: 20px;
+  font-size: 1.5vw;
+  padding-right: 10vw;
 `
 const Clear = styled.div
 `
