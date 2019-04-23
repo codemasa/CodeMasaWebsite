@@ -107,4 +107,8 @@ canvas{
   margin-right: 40px;
   font-size: 20px;
 }
+.buttonClass{
+  width: 1.5em;
+  height: 5em;
+}
 `

@@ -12,7 +12,7 @@ const LissajousProjectDiv= styled.div
 const LissajousProjectHeader = styled.h1
 `
   text-align: left;
-  font-size: 4vw;
+  font-size: 2vw;
   padding-left: 20px;
 `
 
@@ -21,7 +21,7 @@ const LissajousProjectBody = styled.div
   text-align: left;
   padding-left: 20px;
   padding-bottom: 20px;
-  font-size: 2vw;
+  font-size: 1vw;
 
 `
 const LissajousDiv = styled.div

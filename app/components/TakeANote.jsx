@@ -10,7 +10,7 @@ const TakeANoteProjectDiv = styled.div
 const TakeANoteProjectHeader = styled.h1
 `
   text-align: left;
-  font-size: 4vw;
+  font-size: 2vw;
   padding-left: 20px;
 `
 
@@ -19,7 +19,7 @@ const TakeANoteProjectBody = styled.div
   text-align: left;
   padding-left: 20px;
   padding-bottom: 20px;
-  font-size: 2vw;
+  font-size: 1vw;
 `
 const TakeANoteDiv = styled.div
 `
