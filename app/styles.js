@@ -5,6 +5,13 @@ html {
   font-size: 10px;
 }
 body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  color: #111;
+}
+body * {
+  transition: all 0.300s ease-in-out;
 }
 /* Relative Type Scale */
 /* https://blog.envylabs.com/responsive-typographic-scales-in-css-b9f60431d1c4 */
@@ -60,27 +67,146 @@ a {
     text-decoration: none;
   }
 }
-.calendar {
-    font-family: Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif;
-    width: 100%;
+/*------------- MAIN SECTION -------------------*/
+
+
+main {
+
+  position: relative;
+  z-index: 3;
+ overflow: hidden;
 }
 
-.calendar-wrapper {
-    width: 100%;
-}
 
-.week {
-    font-size: 9px;
-    alignment-baseline: central;
-    fill: #AAA;
-}
-
-.month {
-    font-size: 10px;
-    alignment-baseline: central;
-    fill: #AAA;
+main section {
+  width: 70%;
+  padding: 90px 0;
+  margin: 50px auto 150px auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
 
 }
+
+main section h2 {
+  font-size: 4.3rem;
+  color: #ddd;
+  text-transform: uppercase;
+ line-height: 4.2rem;
+ padding-right: 10px;
+ border-right: 3px solid #ddd;
+}
+
+
+
+main section div {
+  position: relative;
+
+}
+
+main section div p {
+  padding-left: 10px;
+}
+
+
+/*------------- GALLERY -------------------*/
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 820px;
+  width: 95%;
+  margin: 180px auto 0px auto;
+  -webkit-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
+ -moz-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
+ box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
+}
+
+.gallery div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+   overflow: hidden;
+   filter: grayscale(83%);
+}
+
+/* images are not compressed, remember to compress them before deployment */
+.gallery div.gallery-item-one {
+  background: url("./images/toa-heftiba-526264-unsplash.jpg");
+  background-size: 160%;
+ grid-column-end: span 2;
+ grid-row-end: span 2;
+}
+
+.gallery div.gallery-item-two {
+  background: url("./images/chuttersnap-598266-unsplash.jpg");
+  background-size: 160%;
+}
+.gallery div.gallery-item-three {
+  background: url("./images/rawpixel-196509-unsplash.jpg");
+  background-size: 160%;
+}
+
+.gallery div.gallery-item-four {
+  background: url("./images/rawpixel-284723-unsplash.jpg");
+  background-size: 160%;
+}
+.gallery div.gallery-item-five {
+  background: url("./images/volkan-olmez-73767-unsplash.jpg");
+  background-size: 160%;
+}
+.gallery div.gallery-item-six {
+  background: url("./images/taduuda-72915-unsplash.jpg");
+  background-size: 160%;
+}
+.gallery div.gallery-item-one:hover, .gallery div.gallery-item-two:hover, .gallery div.gallery-item-three:hover, .gallery div.gallery-item-four:hover, .gallery div.gallery-item-five:hover, .gallery div.gallery-item-six:hover{
+  background-size: 100%;
+  filter: grayscale(0%);
+}
+
+ /*------------- SERVICES -------------------*/
+ div.services {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3,1fr);
+ padding: 10px;
+
+}
+
+
+.services div {
+  text-align: center;
+  background: #393f4d;
+  width: 90%;
+  border-radius: 10px;
+  margin: 10px auto 50px auto;
+
+  -webkit-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+
+}
+
+.services p.service-icon {
+  font-size: 3.4rem;
+  padding: 30px 0px 30px 90px;
+  margin: 0px 0px 30px 0px;
+  text-align: left;
+  color: rgba(29,30,34,1);
+  filter: grayscale(0%);
+  border-bottom: 2px solid rgba(29,30,34,1);
+}
+.services p.service-title{
+  font-size: 3.1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.services p:last-of-type{
+  padding: 0px 90px 20px 90px;
+  text-align: left;
+}
+
 button{
   background-color: #CCBBAA;
   border: none;

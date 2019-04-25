@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { GlobalStyles } from './styles.js';
 import importComponent from 'react-imported-component';
 
+import Landing from './pages/Landing.jsx';
 import Home from './pages/Home.jsx';
 import LoadingComponent from './pages/Loading';
 import ErrorComponent from './pages/Error';
@@ -23,7 +24,8 @@ const App = () => (
     <GlobalStyles />
     <Header/>
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={Landing} />
+      <Route exact path="/home" render={() => <Home />} />
       <Route exact path="/about" render={() => <About />} />
       <Route exact path="/projects" render={() => <Projects />} />
       <Redirect to="/" />

@@ -24,7 +24,7 @@ const Header = styled.header`
 `
 const Brand = styled.h1`
   padding-left: 10vw;
-
+  text-decoration: none;
 `
 const Menu = styled.ul`
   padding-right: 10vw;
@@ -38,10 +38,18 @@ const MenuLink = styled.li`
   margin-left: 2em;
   text-decoration: none;
 `
+const BrandLink = styled(NavLink)
+`
+  text-decoration: none
+`
 export default () => (
 
   <Header>
-    <Brand>Cody Masao</Brand>
+    <BrandLink
+      to="/"
+      exact activeClassName="active">
+      <Brand>Cody Masao</Brand>
+    </BrandLink>
     <ResponsiveMenu
       menuOpenButton={<MdMenu/>}
       menuCloseButton={<MdClear/>}
@@ -51,7 +59,7 @@ export default () => (
         <Menu>
           <MenuLink>
             <NavLink
-              to="/"
+              to="/home"
               exact activeClassName="active"
             >Home</NavLink>
           </MenuLink>
@@ -65,7 +73,7 @@ export default () => (
             <NavLink
               to="/about"
               exact activeClassName="active"
-            >About</NavLink>
+            >About Me</NavLink>
           </MenuLink>
         </Menu>
       }
