@@ -8,6 +8,12 @@ import TakeANoteProject from '../components/TakeANote.jsx';
 import FoodOrder from '../components/FoodOrder.jsx';
 import Form from '../components/Form.jsx';
 import styled from 'styled-components';
+import liss from '../resources/liss.png';
+import food from '../resources/food.png';
+import ssc from '../resources/ssc.png';
+import tan from '../resources/TaN.png';
+import krab from '../resources/krab.png';
+import res from '../resources/res.png';
 
 const Main = styled.div
 `
@@ -19,6 +25,83 @@ const Main = styled.div
   -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+`
+const Gallery = styled.div
+`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 820px;
+  width: 95%;
+  margin: 180px auto 0px auto;
+  -webkit-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
+  -moz-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
+  box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
+
+  &div{
+  width: 100%;
+  height: 100%;
+  position: relative;
+   overflow: hidden;
+   filter: grayscale(83%);
+ }
+`
+
+const GalleryItemOne = styled.div
+`
+  background: url(${food});
+  background-size: 160%;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  &:hover{
+    background-size: 115%;
+    filter: grayscale(0%);
+  }
+`
+
+const GalleryItemTwo = styled.div
+`
+  background: url(${liss});
+  background-size: 160%;
+  &:hover{
+    background-size: 115%;
+    filter: grayscale(0%);
+  }
+`
+const GalleryItemThree = styled.div
+`
+  background: url(${res});
+  background-size: 160%;
+  &:hover{
+    background-size: 135%;
+    filter: grayscale(0%);
+  }
+`
+const GalleryItemFour = styled.div
+`
+  background: url(${tan});
+  background-size: 160%;
+  &:hover{
+    background-size: 115%;
+    filter: grayscale(0%);
+  }
+`
+const GalleryItemFive = styled.div
+`
+  background: url(${ssc});
+  background-size: 160%;
+  &:hover{
+    background-size: 105%;
+    filter: grayscale(0%);
+  }
+`
+const GalleryItemSix = styled.div
+`
+  background: url("${krab}");
+  background-size: 160%;
+  &:hover{
+    background-size: 115%;
+    filter: grayscale(0%);
+  }
 `
 
 
@@ -33,25 +116,22 @@ class Landing extends React.Component {
           <section className="intro">
               <h2>Cody Masao</h2>
               <div>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel gravida nisi. Vestibulum ac consequat lorem. In in mi massa. Donec ut tellus sit amet sem ornare fermentum at et nunc. Pellentesque ac elementum metus. Praesent non venenatis lacus. In sagittis urna in nulla sagittis mattis.</p>
+               <p>My name is Cody-Joe Abe, and I am a Software Engineer looking for a position in the San Francisco Bay area. I specialize in Fullstack Web Development and Mobile Application Development.</p>
               </div>
           </section>
 
           <div>
                <div className="services">
                   <div className="service-one">
-                  <p className="service-icon"><i className="far fa-calendar-alt"></i></p>
                   <p className="service-title">Front End</p>
                   <p>Mauris vitae turpis ut sem blandit consequat et at ligula. Suspendisse quam lectus, tristique dapibus sapien et, tempus suscipit nisl.</p>
                   </div>
                   <div className="service-two">
-                  <p className="service-icon"><i className="fas fa-crop"></i></p>
                   <p className="service-title">Back End</p>
                   <p>Nulla eu metus faucibus, vehicula tortor quis, venenatis odio. Nullam purus mauris, feugiat in odio vitae, posuere volutpat libero. Sed et convallis libero.</p>
 
                   </div>
                   <div className="service-three">
-                  <p className="service-icon"><i className="fas fa-code"></i></p>
                   <p className="service-title">Services</p>
                   <p>Ut ornare vitae enim a rhoncus. Nullam aliquet tristique scelerisque. Sed volutpat dictum risus ac laoreet. Suspendisse id lorem in enim sollicitudin varius.</p>
 
@@ -62,21 +142,21 @@ class Landing extends React.Component {
 
 
 
-          <div className="gallery">
-           <div className="gallery-item-one"></div>
-           <div className="gallery-item-two"></div>
-           <div className="gallery-item-three"></div>
-           <div className="gallery-item-four"></div>
-           <div className="gallery-item-five"></div>
-           <div className="gallery-item-six"></div>
+          <Gallery>
+           <GalleryItemOne/>
+           <GalleryItemTwo/>
+           <GalleryItemThree/>
+           <GalleryItemFour/>
+           <GalleryItemFive/>
+           <GalleryItemSix/>
 
-          </div>
+          </Gallery>
 
           <section>
               <h2>About Me</h2>
               <div>
-                <p>Integer sit amet venenatis erat. Cras elementum tortor odio, sit amet euismod nunc cursus ut. Donec sollicitudin orci sed enim volutpat, volutpat rutrum magna semper. Fusce leo lacus, pulvinar sit amet dignissim in, consectetur eget nulla. Etiam ac turpis augue. Sed tincidunt pulvinar tincidunt. Integer ac blandit magna. Nulla dapibus convallis luctus. </p>
-                <p>Ut elementum urna sit amet elit egestas hendrerit. Vivamus quis sem fringilla, tincidunt nisi non, congue libero. Etiam cursus nulla quis sapien varius, eget accumsan augue mattis. Cras accumsan sapien nulla, eu eleifend odio tempus sit amet. Suspendisse gravida hendrerit sapien, ut molestie mi pellentesque eget. Aliquam eleifend velit vel libero elementum, vitae consectetur nisl sollicitudin. Suspendisse volutpat fringilla vehicula.</p>
+                <p>I like music and I play multiple instruments. I am not bragging or anything. Its just the piano, guitar, bass, ukulele, and I sing.</p>
+                <p>I love movies and like to pretend I am a screenwriter from time to time. I want to direct a short film one day, but maybe not. </p>
                 </div>
           </section>
 

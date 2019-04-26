@@ -130,39 +130,7 @@ main section div p {
    filter: grayscale(83%);
 }
 
-/* images are not compressed, remember to compress them before deployment */
-.gallery div.gallery-item-one {
-  background: url("./images/toa-heftiba-526264-unsplash.jpg");
-  background-size: 160%;
- grid-column-end: span 2;
- grid-row-end: span 2;
-}
 
-.gallery div.gallery-item-two {
-  background: url("./images/chuttersnap-598266-unsplash.jpg");
-  background-size: 160%;
-}
-.gallery div.gallery-item-three {
-  background: url("./images/rawpixel-196509-unsplash.jpg");
-  background-size: 160%;
-}
-
-.gallery div.gallery-item-four {
-  background: url("./images/rawpixel-284723-unsplash.jpg");
-  background-size: 160%;
-}
-.gallery div.gallery-item-five {
-  background: url("./images/volkan-olmez-73767-unsplash.jpg");
-  background-size: 160%;
-}
-.gallery div.gallery-item-six {
-  background: url("./images/taduuda-72915-unsplash.jpg");
-  background-size: 160%;
-}
-.gallery div.gallery-item-one:hover, .gallery div.gallery-item-two:hover, .gallery div.gallery-item-three:hover, .gallery div.gallery-item-four:hover, .gallery div.gallery-item-five:hover, .gallery div.gallery-item-six:hover{
-  background-size: 100%;
-  filter: grayscale(0%);
-}
 
  /*------------- SERVICES -------------------*/
  div.services {

@@ -61,7 +61,7 @@ export default () => (
             <NavLink
               to="/home"
               exact activeClassName="active"
-            >Home</NavLink>
+            >Résumé</NavLink>
           </MenuLink>
           <MenuLink>
             <NavLink

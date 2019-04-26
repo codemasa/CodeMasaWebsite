@@ -50,7 +50,7 @@ class SSCProject extends React.Component{
 
       </SSCProjectBody>
       <SSCDiv>
-        <SevenSegmentCounter buttonClass="buttonClass" buttonTag={buttonTags} width={200} onColor={"#000000"} offColor={"#BBEEBB"} backgroundColor={"#AAFFAA"}/>
+        <SevenSegmentCounter buttonClass="buttonClass" buttonTag={buttonTags} width={200} onColor={"#feda6a"} offColor={"#654202"} backgroundColor={"#393f4d"}/>
       </SSCDiv>
     </SSCProjectDiv>
     )
