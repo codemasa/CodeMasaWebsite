@@ -15,8 +15,9 @@ import tan from '../resources/TaN.png';
 import krab from '../resources/krab.png';
 import res from '../resources/res.png';
 
-const Main = styled.div
+const Main = styled.main
 `
+  text-align: left;
   background-color: #393f4d;
   color: #feda6a;
   width: 100%;
@@ -109,8 +110,8 @@ const GalleryItemSix = styled.div
 class Landing extends React.Component {
   render() {
     return (
-      <Main>
-        <main>
+      <Page>
+        <Main>
 
 
           <section className="intro">
@@ -168,8 +169,8 @@ class Landing extends React.Component {
           </section>
 
 
-        </main>
-      </Main>
+        </Main>
+      </Page>
     );
   }
 }
