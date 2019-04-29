@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 export const GlobalStyles = createGlobalStyle`
 /* Base 10 typography scale courtesty of @wesbos 1.6rem === 16px */
 html {
-  font-size: 10px;
+  font-size: 15px;
 }
 body {
   margin: 0;
@@ -111,24 +111,7 @@ main section div p {
 
 /*------------- GALLERY -------------------*/
 
-.gallery{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  height: 820px;
-  width: 95%;
-  margin: 180px auto 0px auto;
-  -webkit-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
- -moz-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
- box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
-}
 
-.gallery div {
-  width: 100%;
-  height: 100%;
-  position: relative;
-   overflow: hidden;
-   filter: grayscale(83%);
-}
 
 
 

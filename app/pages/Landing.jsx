@@ -1,5 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet-async';
+import { NavLink } from 'react-router-dom';
+
 import Page from '../components/Page.jsx';
 import Contents from '../components/Contents.jsx';
 import SSCProject from '../components/SSCProject.jsx';
@@ -7,6 +9,12 @@ import LissajousProject from '../components/Lissajous.jsx';
 import TakeANoteProject from '../components/TakeANote.jsx';
 import FoodOrder from '../components/FoodOrder.jsx';
 import Form from '../components/Form.jsx';
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
+import { FaTwitch } from "react-icons/fa";
+
 import styled from 'styled-components';
 import liss from '../resources/liss.png';
 import food from '../resources/food.png';
@@ -17,7 +25,7 @@ import res from '../resources/res.png';
 
 const Main = styled.main
 `
-  text-align: left;
+  text-align: left  ;
   background-color: #393f4d;
   color: #feda6a;
   width: 100%;
@@ -105,6 +113,16 @@ const GalleryItemSix = styled.div
   }
 `
 
+const Menu = styled.ul`
+  display: flex;
+  font-size: 30px;
+  float: left;
+`
+const MenuLink = styled.li`
+  margin-left: 2em;
+  text-decoration: none;
+`
+
 
 
 class Landing extends React.Component {
@@ -125,16 +143,16 @@ class Landing extends React.Component {
                <div className="services">
                   <div className="service-one">
                   <p className="service-title">Front End</p>
-                  <p>Mauris vitae turpis ut sem blandit consequat et at ligula. Suspendisse quam lectus, tristique dapibus sapien et, tempus suscipit nisl.</p>
+                  <p>I am able to build responsive front end applications using ReactJS. I have experience using the Cocoa Touch as well as Native Android and React Native frameworks.</p>
                   </div>
                   <div className="service-two">
                   <p className="service-title">Back End</p>
-                  <p>Nulla eu metus faucibus, vehicula tortor quis, venenatis odio. Nullam purus mauris, feugiat in odio vitae, posuere volutpat libero. Sed et convallis libero.</p>
+                  <p>I have experience in maintaining both MySQL as well as MongoDB database servers. I also have web deployment experience in Heroku and AWS.</p>
 
                   </div>
                   <div className="service-three">
                   <p className="service-title">Services</p>
-                  <p>Ut ornare vitae enim a rhoncus. Nullam aliquet tristique scelerisque. Sed volutpat dictum risus ac laoreet. Suspendisse id lorem in enim sollicitudin varius.</p>
+                  <p>I am able to help you in developing any Web Application idea that you may have. I can also provide guidance for any quetions anyone may have on the subject of web development or programming in general. </p>
 
             </div>
           </div>
@@ -144,13 +162,36 @@ class Landing extends React.Component {
 
 
           <Gallery>
-           <GalleryItemOne/>
-           <GalleryItemTwo/>
-           <GalleryItemThree/>
-           <GalleryItemFour/>
-           <GalleryItemFive/>
-           <GalleryItemSix/>
-
+            <NavLink
+            to="/projects"
+            exact activeClassName="active">
+              <GalleryItemOne/>
+            </NavLink>
+            <NavLink
+            to="/projects"
+            exact activeClassName="active">
+              <GalleryItemTwo/>
+            </NavLink>
+            <NavLink
+            to="/home"
+            exact activeClassName="active">
+              <GalleryItemThree/>
+            </NavLink>
+            <NavLink
+            to="/projects"
+            exact activeClassName="active">
+              <GalleryItemFour/>
+            </NavLink>
+            <NavLink
+            to="/projects"
+            exact activeClassName="active">
+              <GalleryItemFive/>
+            </NavLink>
+            <NavLink
+            to="/projects"
+            exact activeClassName="active">
+              <GalleryItemSix/>
+            </NavLink>
           </Gallery>
 
           <section>
@@ -162,9 +203,39 @@ class Landing extends React.Component {
           </section>
 
 
+
+          <section>
+              <h2>Socials</h2>
+              <Menu>
+                <MenuLink>
+                  <a href="https://github.com/codemasa" target="_blank">
+                    <FaGithub/>
+                  </a>
+                </MenuLink>
+                <MenuLink>
+                  <a href="https://www.linkedin.com/in/codemasa" target="_blank">
+                    <FaLinkedin/>
+                  </a>
+                </MenuLink>
+                <MenuLink>
+                  <a href="https://www.twitter.com/codymasao" target="_blank">
+                    <FaTwitterSquare/>
+                  </a>
+                </MenuLink>
+                <MenuLink>
+                  <a href="https://www.twitch.tv/codemasa" target="_blank">
+                    <FaTwitch/>
+                  </a>
+                </MenuLink>
+              </Menu>
+
+          </section>
+
           <section>
               <h2>Contact Me</h2>
-              <Form />
+              <div>
+                <p> For business inquiries: codemasacode@gmail.com </p>
+              </div>
 
           </section>
 
