@@ -55,7 +55,7 @@ const Gallery = styled.div
  }
 `
 
-const GalleryItemOne = styled.div
+const GalleryItemOne = styled(NavLink)
 `
   background: url(${food});
   background-size: 160%;
@@ -67,7 +67,7 @@ const GalleryItemOne = styled.div
   }
 `
 
-const GalleryItemTwo = styled.div
+const GalleryItemTwo = styled(NavLink)
 `
   background: url(${liss});
   background-size: 160%;
@@ -76,7 +76,7 @@ const GalleryItemTwo = styled.div
     filter: grayscale(0%);
   }
 `
-const GalleryItemThree = styled.div
+const GalleryItemThree = styled(NavLink)
 `
   background: url(${res});
   background-size: 160%;
@@ -85,7 +85,7 @@ const GalleryItemThree = styled.div
     filter: grayscale(0%);
   }
 `
-const GalleryItemFour = styled.div
+const GalleryItemFour = styled(NavLink)
 `
   background: url(${tan});
   background-size: 160%;
@@ -94,7 +94,7 @@ const GalleryItemFour = styled.div
     filter: grayscale(0%);
   }
 `
-const GalleryItemFive = styled.div
+const GalleryItemFive = styled(NavLink)
 `
   background: url(${ssc});
   background-size: 160%;
@@ -103,7 +103,7 @@ const GalleryItemFive = styled.div
     filter: grayscale(0%);
   }
 `
-const GalleryItemSix = styled.div
+const GalleryItemSix = styled(NavLink)
 `
   background: url("${krab}");
   background-size: 160%;
@@ -162,36 +162,25 @@ class Landing extends React.Component {
 
 
           <Gallery>
-            <NavLink
+
+            <GalleryItemOne
             to="/projects"
-            exact activeClassName="active">
-              <GalleryItemOne/>
-            </NavLink>
-            <NavLink
+            exact activeClassName="active"/>
+            <GalleryItemTwo
             to="/projects"
-            exact activeClassName="active">
-              <GalleryItemTwo/>
-            </NavLink>
-            <NavLink
+            exact activeClassName="active"/>
+            <GalleryItemThree
             to="/home"
-            exact activeClassName="active">
-              <GalleryItemThree/>
-            </NavLink>
-            <NavLink
+            exact activeClassName="active"/>
+            <GalleryItemFour
             to="/projects"
-            exact activeClassName="active">
-              <GalleryItemFour/>
-            </NavLink>
-            <NavLink
+            exact activeClassName="active"/>
+            <GalleryItemFive
             to="/projects"
-            exact activeClassName="active">
-              <GalleryItemFive/>
-            </NavLink>
-            <NavLink
+            exact activeClassName="active"/>
+            <GalleryItemSix
             to="/projects"
-            exact activeClassName="active">
-              <GalleryItemSix/>
-            </NavLink>
+            exact activeClassName="active"/>
           </Gallery>
 
           <section>
