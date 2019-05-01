@@ -123,6 +123,17 @@ const MenuLink = styled.li`
   text-decoration: none;
 `
 
+const Services = styled.div`
+ display: grid;
+ height: auto;
+ grid-template-columns: repeat(3,1fr);
+ padding: 10px;
+
+`
+
+const Service = styled.div`
+`
+
 
 
 class Landing extends React.Component {
@@ -140,24 +151,24 @@ class Landing extends React.Component {
           </section>
 
           <div>
-               <div className="services">
-                  <div className="service-one">
+             <Services className="services">
+                <Service>
                   <p className="service-title">Front End</p>
                   <p>I am able to build responsive front end applications using ReactJS. I have experience using the Cocoa Touch as well as Native Android and React Native frameworks.</p>
-                  </div>
-                  <div className="service-two">
-                  <p className="service-title">Back End</p>
-                  <p>I have experience in maintaining both MySQL as well as MongoDB database servers. I also have web deployment experience in Heroku and AWS.</p>
+                </Service>
+                <Service>
+                <p className="service-title">Back End</p>
+                <p>I have experience in maintaining both MySQL as well as MongoDB database servers. I also have web deployment experience in Heroku and AWS.</p>
 
-                  </div>
-                  <div className="service-three">
+                </Service>
+                <Service>
                   <p className="service-title">Services</p>
                   <p>I am able to help you in developing any Web Application idea that you may have. I can also provide guidance for any quetions anyone may have on the subject of web development or programming in general. </p>
 
-            </div>
-          </div>
+                </Service>
+              </Services>
 
-              </div>
+            </div>
 
 
 

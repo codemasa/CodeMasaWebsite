@@ -116,13 +116,6 @@ main section div p {
 
 
  /*------------- SERVICES -------------------*/
- div.services {
-  display: grid;
-  height: auto;
-  grid-template-columns: repeat(3,1fr);
- padding: 10px;
-
-}
 
 
 .services div {
