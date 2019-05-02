@@ -57,7 +57,7 @@ const Gallery = styled.div
 
 const GalleryItemOne = styled(NavLink)
 `
-  background: url(${food});
+  background: url(${food}?v=0);
   background-size: 160%;
   grid-column-end: span 2;
   grid-row-end: span 2;
@@ -69,7 +69,7 @@ const GalleryItemOne = styled(NavLink)
 
 const GalleryItemTwo = styled(NavLink)
 `
-  background: url(${liss});
+  background: url(${liss}?v=0);
   background-size: 160%;
   &:hover{
     background-size: 115%;
@@ -78,7 +78,7 @@ const GalleryItemTwo = styled(NavLink)
 `
 const GalleryItemThree = styled(NavLink)
 `
-  background: url(${res});
+  background: url(${res}?v=0);
   background-size: 160%;
   &:hover{
     background-size: 135%;
@@ -87,7 +87,7 @@ const GalleryItemThree = styled(NavLink)
 `
 const GalleryItemFour = styled(NavLink)
 `
-  background: url(${tan});
+  background: url(${tan}?v=0);
   background-size: 160%;
   &:hover{
     background-size: 115%;
@@ -96,7 +96,7 @@ const GalleryItemFour = styled(NavLink)
 `
 const GalleryItemFive = styled(NavLink)
 `
-  background: url(${ssc});
+  background: url(${ssc}?v=0);
   background-size: 160%;
   &:hover{
     background-size: 105%;
@@ -105,7 +105,7 @@ const GalleryItemFive = styled(NavLink)
 `
 const GalleryItemSix = styled(NavLink)
 `
-  background: url("${krab}");
+  background: url("${krab}?v=0");
   background-size: 160%;
   &:hover{
     background-size: 115%;
