@@ -131,7 +131,7 @@ const Services = styled.div`
   div{
     text-align: center;
     background: #393f4d;
-    width: 30vw;
+    width: 30rvw;
     border-radius: 10px;
     margin: 10px auto 50px auto;
 
