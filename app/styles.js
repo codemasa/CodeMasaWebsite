@@ -89,7 +89,7 @@ main section {
 }
 
 main section h2 {
-  font-size: 4.3rem;
+  font-size: 4vw;
   color: #ddd;
   text-transform: uppercase;
  line-height: 4.2rem;
@@ -118,32 +118,15 @@ main section div p {
  /*------------- SERVICES -------------------*/
 
 
-.services div {
-  text-align: center;
-  background: #393f4d;
-  width: 90%;
-  border-radius: 10px;
-  margin: 10px auto 50px auto;
-
-  -webkit-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
-  box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
-
-}
 
 .services p.service-icon {
-  font-size: 3.4rem;
+  font-size: 3.4vw;
   padding: 30px 0px 30px 90px;
   margin: 0px 0px 30px 0px;
   text-align: left;
   color: rgba(29,30,34,1);
   filter: grayscale(0%);
   border-bottom: 2px solid rgba(29,30,34,1);
-}
-.services p.service-title{
-  font-size: 3.1rem;
-  padding: 0;
-  margin: 0;
 }
 
 .services p:last-of-type{

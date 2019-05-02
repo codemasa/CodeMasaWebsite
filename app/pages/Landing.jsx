@@ -39,14 +39,14 @@ const Gallery = styled.div
 `
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 820px;
+  height: 75vw;
   width: 95%;
   margin: 180px auto 0px auto;
   -webkit-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
   -moz-box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
   box-shadow: 0px 10px 20px -11px rgba(0,0,0,0.9);
 
-  &div{
+  div{
   width: 100%;
   height: 100%;
   position: relative;
@@ -115,7 +115,7 @@ const GalleryItemSix = styled(NavLink)
 
 const Menu = styled.ul`
   display: flex;
-  font-size: 30px;
+  font-size: 2vw;
   float: left;
 `
 const MenuLink = styled.li`
@@ -124,46 +124,80 @@ const MenuLink = styled.li`
 `
 
 const Services = styled.div`
- display: grid;
- height: auto;
- grid-template-columns: repeat(3,1fr);
- padding: 10px;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(3,1fr);
+  padding: 10px;
+  div{
+    text-align: center;
+    background: #393f4d;
+    width: 30vw;
+    border-radius: 10px;
+    margin: 10px auto 50px auto;
 
+    -webkit-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 30px -9px rgba(0,0,0,0.75);
+  }
 `
 
 const Service = styled.div`
+  margin: 0;
+`
+const ServiceTitle = styled.p
+`
+  font-size: 3.1vw;
+  padding: 1vw 1vw 1vw 1vw;
+  margin: 0;
+`
+const ServiceBody = styled.p
+`
+  font-size: 2vw;
+  padding: 1vw 1vw 5vw 1vw;
 `
 
+const CodyMasao = styled.h2
+`
+  font-size: 3.4vw;
+`
+
+const CodyMasaoBody = styled.p
+`
+  font-size: 2vw;
+  padding: 0 1vw 0 4vw;
+`
 
 
 class Landing extends React.Component {
   render() {
     return (
       <Page>
+        <Helmet>
+          <title>Cody Masao</title>
+        </Helmet>
         <Main>
 
-
           <section className="intro">
-              <h2>Cody Masao</h2>
+              <CodyMasao>Cody Masao</CodyMasao>
               <div>
-               <p>My name is Cody-Joe Abe, and I am a Software Engineer looking for a position in the San Francisco Bay area. I specialize in Fullstack Web Development and Mobile Application Development.</p>
+               <CodyMasaoBody>My name is Cody-Joe Abe, and I am a Software Engineer looking for a position in the San Francisco Bay area. I specialize in Fullstack Web Development and Mobile Application Development.</CodyMasaoBody>
               </div>
           </section>
 
           <div>
-             <Services className="services">
+             <Services >
                 <Service>
-                  <p className="service-title">Front End</p>
-                  <p>I am able to build responsive front end applications using ReactJS. I have experience using the Cocoa Touch as well as Native Android and React Native frameworks.</p>
+                  <ServiceTitle>Front End</ServiceTitle>
+                  <ServiceBody>I am able to build responsive front end applications using ReactJS. I have experience using the Cocoa Touch as well as Native Android and React Native frameworks.</ServiceBody>
                 </Service>
                 <Service>
-                <p className="service-title">Back End</p>
-                <p>I have experience in maintaining both MySQL as well as MongoDB database servers. I also have web deployment experience in Heroku and AWS.</p>
+                <ServiceTitle>Back End</ServiceTitle>
+                <ServiceBody>I have experience in maintaining both MySQL as well as MongoDB database servers. I also have web deployment experience in Heroku and AWS.</ServiceBody>
 
                 </Service>
                 <Service>
-                  <p className="service-title">Services</p>
-                  <p>I am able to help you in developing any Web Application idea that you may have. I can also provide guidance for any quetions anyone may have on the subject of web development or programming in general. </p>
+                  <ServiceTitle>Services</ServiceTitle>
+                  <ServiceBody>I am able to help you in developing any Web Application idea that you may have. I can also provide guidance for any quetions anyone may have on the subject of web development or programming in general. </ServiceBody>
 
                 </Service>
               </Services>
