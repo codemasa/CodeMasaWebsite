@@ -25,6 +25,9 @@ import res from '../resources/res.png';
 
 const Main = styled.main
 `
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
   text-align: left  ;
   background-color: #393f4d;
   color: #feda6a;
@@ -53,6 +56,30 @@ const Gallery = styled.div
    overflow: hidden;
    filter: grayscale(83%);
  }
+`
+
+const Section = styled.section
+`
+  width: 70%;
+  padding: 90px 0;
+  margin: 50px auto 150px auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  h2{
+    font-size: 3vw;
+    color: #ddd;
+    text-transform: uppercase;
+    line-height: 4.2rem;
+    padding-right: 10px;
+    border-right: 3px solid #FFF;
+  }
+  div{
+    position: relative;
+    p{
+      padding-left: 20px;
+    }
+  }
 `
 
 const GalleryItemOne = styled(NavLink)
@@ -131,7 +158,7 @@ const Services = styled.div`
   div{
     text-align: center;
     background: #393f4d;
-    width: 30rvw;
+    width: 90%;
     border-radius: 10px;
     margin: 10px auto 50px auto;
 
@@ -156,10 +183,6 @@ const ServiceBody = styled.p
   padding: 1vw 1vw 5vw 1vw;
 `
 
-const CodyMasao = styled.h2
-`
-  font-size: 3.4vw;
-`
 
 const CodyMasaoBody = styled.p
 `
@@ -177,12 +200,12 @@ class Landing extends React.Component {
         </Helmet>
         <Main>
 
-          <section className="intro">
-              <CodyMasao>Cody Masao</CodyMasao>
+          <Section className="intro">
+              <h2>Cody Masao</h2>
               <div>
-               <CodyMasaoBody>My name is Cody-Joe Abe, and I am a Software Engineer looking for a position in the San Francisco Bay area. I specialize in Fullstack Web Development and Mobile Application Development.</CodyMasaoBody>
+                 <CodyMasaoBody>My name is Cody-Joe Abe, and I am a Software Engineer looking for a position in the San Francisco Bay area. I specialize in Fullstack Web Development and Mobile Application Development.</CodyMasaoBody>
               </div>
-          </section>
+          </Section>
 
           <div>
              <Services >
@@ -228,17 +251,17 @@ class Landing extends React.Component {
             exact activeClassName="active"/>
           </Gallery>
 
-          <section>
+          <Section>
               <h2>About Me</h2>
               <div>
                 <p>I like music and I play multiple instruments. I am not bragging or anything. Its just the piano, guitar, bass, ukulele, and I sing.</p>
                 <p>I love movies and like to pretend I am a screenwriter from time to time. I want to direct a short film one day, but maybe not. </p>
                 </div>
-          </section>
+          </Section>
 
 
 
-          <section>
+          <Section>
               <h2>Socials</h2>
               <Menu>
                 <MenuLink>
@@ -263,15 +286,15 @@ class Landing extends React.Component {
                 </MenuLink>
               </Menu>
 
-          </section>
+          </Section>
 
-          <section>
+          <Section>
               <h2>Contact Me</h2>
               <div>
                 <p> For business inquiries: codemasacode@gmail.com </p>
               </div>
 
-          </section>
+          </Section>
 
 
         </Main>
