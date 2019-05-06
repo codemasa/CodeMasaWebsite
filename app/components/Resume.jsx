@@ -73,9 +73,9 @@ class Resume extends React.Component{
         <h2>University of Oregon NSF Research Grant</h2>
         <h2>Coding and Scripting Specialist</h2>
         <p>• Assisted in a study by creating scripts to</p><p>facilitate the rate of information gathering</p>
-        <p>• Improved rate of data collection by 100%</p>
+        <p>• Improved rate of data collection by 100% by cleaning up existing codebase</p>
         <p>• Collaborated cohesively with other employees of grant</p>
-        <p>• Contributed in solving various efficiency-based problems</p>
+        <p>• Utilized APIs integral to the thorough completion of research</p>
       </ResumeHeaderLeft>
       <ResumeHeaderRight>
         <p>Eugene, OR</p>
@@ -117,7 +117,7 @@ class Resume extends React.Component{
       <ClearDiv/>
       <ResumeHeaderLeft>
         <h2>Other</h2>
-        <p>SQLite, MySQL, MongoDB, Android Studio, Xcode, Shell, Git, ReactJS, AngularJS, NodeJS, Rails, Heroku, AWS</p>
+        <p>Android Studio, Xcode, Shell, Git, ReactJS, AngularJS, NodeJS, Rails, Heroku, AWS</p>
       </ResumeHeaderLeft>
       <Clear/>
 

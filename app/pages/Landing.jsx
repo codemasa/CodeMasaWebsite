@@ -37,6 +37,8 @@ const Main = styled.main
   -webkit-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 54px -11px rgba(0,0,0,0.75);
+  text-decoration: none;
+
 `
 const Gallery = styled.div
 `
@@ -78,6 +80,8 @@ const Section = styled.section
     position: relative;
     p{
       padding-left: 20px;
+      text-decoration: none;
+
     }
   }
 `
@@ -181,6 +185,8 @@ const ServiceBody = styled.p
 `
   font-size: 2vw;
   padding: 1vw 1vw 5vw 1vw;
+  text-decoration: none;
+
 `
 
 
