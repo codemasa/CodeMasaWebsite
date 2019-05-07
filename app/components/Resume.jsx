@@ -116,7 +116,7 @@ class Resume extends React.Component{
       </ResumeHeaderLeft>
       <ClearDiv/>
       <ResumeHeaderLeft>
-        <h2>Other</h2>
+        <h2>Technologies</h2>
         <p>Android Studio, Xcode, Shell, Git, ReactJS, AngularJS, NodeJS, Rails, Heroku, AWS</p>
       </ResumeHeaderLeft>
       <Clear/>
