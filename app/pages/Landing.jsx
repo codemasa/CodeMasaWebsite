@@ -4,10 +4,6 @@ import { NavLink } from 'react-router-dom';
 
 import Page from '../components/Page.jsx';
 import Contents from '../components/Contents.jsx';
-import SSCProject from '../components/SSCProject.jsx';
-import LissajousProject from '../components/Lissajous.jsx';
-import TakeANoteProject from '../components/TakeANote.jsx';
-import FoodOrder from '../components/FoodOrder.jsx';
 import Form from '../components/Form.jsx';
 
 import { FaGithub } from "react-icons/fa";
