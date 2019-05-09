@@ -84,7 +84,7 @@ const Section = styled.section
 
 const GalleryItemOne = styled(NavLink)
 `
-  background: url(${food}?v=0);
+  background: url(${()=>food});
   background-size: 160%;
   grid-column-end: span 2;
   grid-row-end: span 2;
@@ -96,7 +96,7 @@ const GalleryItemOne = styled(NavLink)
 
 const GalleryItemTwo = styled(NavLink)
 `
-  background: url(${liss}?v=0);
+  background: url(${()=>liss});
   background-size: 160%;
   &:hover{
     background-size: 115%;
@@ -105,7 +105,7 @@ const GalleryItemTwo = styled(NavLink)
 `
 const GalleryItemThree = styled(NavLink)
 `
-  background: url(${res}?v=0);
+  background: url(${()=>res});
   background-size: 160%;
   &:hover{
     background-size: 135%;
@@ -114,7 +114,7 @@ const GalleryItemThree = styled(NavLink)
 `
 const GalleryItemFour = styled(NavLink)
 `
-  background: url(${tan}?v=0);
+  background: url(${()=>tan});
   background-size: 160%;
   &:hover{
     background-size: 115%;
@@ -123,7 +123,7 @@ const GalleryItemFour = styled(NavLink)
 `
 const GalleryItemFive = styled(NavLink)
 `
-  background: url(${ssc}?v=0);
+  background: url(${()=>ssc});
   background-size: 160%;
   &:hover{
     background-size: 105%;
@@ -132,7 +132,7 @@ const GalleryItemFive = styled(NavLink)
 `
 const GalleryItemSix = styled(NavLink)
 `
-  background: url("${krab}?v=0");
+  background: url(${()=>krab});
   background-size: 160%;
   &:hover{
     background-size: 115%;
@@ -194,6 +194,13 @@ const CodyMasaoBody = styled.p
 
 
 class Landing extends React.Component {
+  constructor(props){
+    super(props);
+
+  }
+  componentDidMount(){
+
+  }
   render() {
     return (
       <Page>
