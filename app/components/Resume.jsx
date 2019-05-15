@@ -96,6 +96,7 @@ class Resume extends React.Component{
       <ResumeHeaderLeft>
         <h2>College of Arts and Sciences</h2>
         <p>B.S., Computer and Information Science; Business Administration Minor</p>
+        <p>GPA 3.4 -- Dean's List</p>
       </ResumeHeaderLeft>
       <ResumeHeaderRight>
         <p>September 2014 - July 2018</p>
